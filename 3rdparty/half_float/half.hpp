@@ -33,9 +33,7 @@
 	#if __has_feature(cxx_static_assert) && !defined(HALF_ENABLE_CPP11_STATIC_ASSERT)
 		#define HALF_ENABLE_CPP11_STATIC_ASSERT 1
 	#endif
-	#if __has_feature(cxx_constexpr) && !defined(HALF_ENABLE_CPP11_CONSTEXPR)
-		#define HALF_ENABLE_CPP11_CONSTEXPR 1
-	#endif
+	#define HALF_ENABLE_CPP11_CONSTEXPR 0
 	#if __has_feature(cxx_noexcept) && !defined(HALF_ENABLE_CPP11_NOEXCEPT)
 		#define HALF_ENABLE_CPP11_NOEXCEPT 1
 	#endif
@@ -63,9 +61,7 @@
 		#if HALF_GNUC_VERSION >= 403 && !defined(HALF_ENABLE_CPP11_STATIC_ASSERT)
 			#define HALF_ENABLE_CPP11_STATIC_ASSERT 1
 		#endif
-		#if HALF_GNUC_VERSION >= 406 && !defined(HALF_ENABLE_CPP11_CONSTEXPR)
-			#define HALF_ENABLE_CPP11_CONSTEXPR 1
-		#endif
+		#define HALF_ENABLE_CPP11_CONSTEXPR 0
 		#if HALF_GNUC_VERSION >= 406 && !defined(HALF_ENABLE_CPP11_NOEXCEPT)
 			#define HALF_ENABLE_CPP11_NOEXCEPT 1
 		#endif
